@@ -8,7 +8,7 @@
 {% set docker_image_cu118 = "public.ecr.aws/q9t5s3a7/vllm-ci-postmerge-repo:$BUILDKITE_COMMIT-cu118" %}
 {% set docker_image_cpu = "public.ecr.aws/q9t5s3a7/vllm-ci-postmerge-repo:$BUILDKITE_COMMIT-cpu" %}
 {% endif %}
-{% set docker_image_amd = "rocm/vllm-ci:$BUILDKITE_COMMIT" %}
+{% set docker_image_amd = "rocm/vllm-spur:$BUILDKITE_COMMIT" %}
 {% set default_working_dir = "/vllm-workspace/tests" %}
 {% set hf_home = "/root/.cache/huggingface" %}
 {% set hf_home_efs = "/mnt/efs/hf_cache" %}
